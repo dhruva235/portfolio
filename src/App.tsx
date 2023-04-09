@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import Parent from "./parent"
 import './App.css';
-
+import "./style.css";
+import Navbar1 from "./Navbar/navbar"
+import About from "./About/about"
+import Home from "./Home/home"
+import ResumeNew from "./resume/Resume"
+import { Container, Row, Col } from "react-bootstrap";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+ return(
+  <>
+ 
+  <div className="App">
+ 
+  
 
+   <Router>
+   <Navbar1/> 
+<Routes>
+{/* <Route path="/" element={(!(user && user._id))?<Login setLoginUser={setLoginUser}/>:null}/> */}
+<Route path="/" element={<Home/>} />
+<Route path="/about" element={<About/>} />
+<Route path="/resume" element={<ResumeNew/>} />
+
+</Routes>
+</Router>
+   </div>
+
+
+</>
+
+ )}
 export default App;
