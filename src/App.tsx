@@ -7,6 +7,7 @@ import Navbar1 from "./Navbar/navbar"
 import About from "./About/about"
 import Home from "./Home/home"
 import ResumeNew from "./resume/Resume"
+import Projects from "./pROJECTS/projects"
 import { Container, Row, Col } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
@@ -24,6 +25,7 @@ function App() {
 <Route path="/" element={<Home/>} />
 <Route path="/about" element={<About/>} />
 <Route path="/resume" element={<ResumeNew/>} />
+<Route path="/projects" element={<Projects/>} />
 
 </Routes>
 </Router>

@@ -32,7 +32,7 @@ const Navbar1 = ()=>{
           <AiOutlineUser style={{ marginBottom: "2px" }} /> 
             About
           </NavLink>
-          <NavLink to='/annual' >
+          <NavLink to='/projects' >
           <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
